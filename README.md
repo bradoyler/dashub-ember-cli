@@ -11,7 +11,7 @@ DasHub is a tool to make GitHub Issues more visible and manageable to teams usin
 
 It uses Ember-Cli, which aims to be the foundation for ambitious web applications built with Ember.
 
-* [Ember-Cli Repo](https://github.com/stefanpenner/ember-cli)
+* [Ember-Cli Repository](https://github.com/stefanpenner/ember-cli)
 
 ## Try it
 - http://bradoyler.github.io/dashub
@@ -28,8 +28,7 @@ It uses Ember-Cli, which aims to be the foundation for ambitious web application
 ```sh
 git clone https://github.com/bradoyler/dashub-ember-cli.git
 cd dashub-ember-cli
-npm install
-bower install
+npm install && bower install
 ember server
 ```
 
