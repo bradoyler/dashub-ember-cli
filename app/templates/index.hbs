@@ -1,0 +1,41 @@
+{{#if reponame}}
+    <header class="dashboard-header">
+      <div class="container">
+        <div class="line">
+          <div class="unit">
+            <h4 class="inline-block">
+              Repository: <a {{bind-attr href=repourl}} target="blank">{{reponame}}</a>
+            </h4>
+            {{#link-to 'settings' class='button'}}Change{{/link-to}}
+            <a class="button" href=""> Refresh</a>
+          </div>
+        </div>
+      </div>
+    </header>
+{{/if}}
+
+{{#if username}}
+  {{#unless reponame}}
+    <div class="container">
+      <div class="line">
+        <div class="unit">
+          <p>{{#link-to 'settings' class='button'}}Set Repo{{/link-to}}</p>
+        </div>
+      </div>
+    </div>
+  {{/unless}}
+{{/if}}
+
+<div class="container">
+  {{#if username}}
+    {{render "openissues"}}
+    {{render "pulls"}}
+    {{render "closedissues"}}
+  {{else}}
+    <div class="center-unit size8of8 intro">
+        <h2>Sign-in with GitHub</h2>
+        <p>{{#link-to 'login' class='button'}}Sign-in{{/link-to}}</p>
+        <p><img class="intro-image" src="assets/screen.png"></p>
+    </div>
+  {{/if}}
+</div>

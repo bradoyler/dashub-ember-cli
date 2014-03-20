@@ -1,0 +1,13 @@
+.stream {
+  background-color: #fafafa;
+  padding-left: $base-line-height;
+  padding-right: $base-line-height;
+  border-radius: $base-border-radius;
+  color: #4a4d4e;
+  border-color: #D5D5D5;
+  border-style: solid;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  @include vr-border-top(1px, 1);
+  @include vr-border-bottom(1px, 1);
+}

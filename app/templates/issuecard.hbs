@@ -1,0 +1,23 @@
+ <div class="card">
+   <div class="line">
+     <a class="issue-number" {{bind-attr href=html_url}} target="blank"> #{{number}} </a>
+     <time class="timestamp meta">{{format-date updated_at}}</time>
+   </div>
+      <h6><i></i> {{title}} </h6>
+      <p class="meta">
+      	<img class="avatar" {{bind-attr src=user.avatar_url}} height='30'>
+      	<a {{bind-attr href='user.url'}}>@{{user.login}}</a>     
+            {{#if assignee}}
+              <small>assigned</small>  <a {{bind-attr href='assignee.url'}}>@{{assignee.login}}</a>
+            {{/if}}  
+      </p>
+      {{#if labels}}
+        <span class="label" style="background-color:#{{unbound labels.[0].color}}">{{labels.[0].name}}</span> <span class="label">{{milestone.title}}</span>
+        <span class="meta"><i></i>{{comments}}</span>
+       {{/if}}
+      {{#if pull_request.html_url}}
+      <span class="meta"><i></i>
+            <a {{bind-attr href=pull_request.html_url}} target="blank">PR</a>
+      </span>
+      {{/if}}
+</div>

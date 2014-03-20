@@ -1,0 +1,6 @@
+.site-header {
+  background-color: #2f3132;
+  @include vr-padding-top(2);
+  @include vr-padding-bottom(2);
+  @include vr-margin-bottom(2)
+}

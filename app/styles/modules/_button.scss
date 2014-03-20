@@ -1,0 +1,30 @@
+.button-txt {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  background-image: none;
+  border-style: solid;
+  border-color: transparent;
+  white-space: nowrap;
+  padding-right: $base-line-height;
+  padding-left: $base-line-height;
+  border-radius: $base-border-radius;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  vertical-align: top;
+  margin-bottom: 0;
+  @include set-leading(3);
+  @include vr-border-top(1px, 1);
+  @include vr-border-bottom(1px, 1)
+}
+
+.button, button {
+  @extend .button-txt;
+  background-color: #80d263;
+  text-decoration: none;
+  @include link-colors(#fff, #fff, #fff, #fff, #fff);
+}

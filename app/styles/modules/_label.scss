@@ -1,0 +1,10 @@
+.label {
+  background-color: #cfddf3;
+  border-radius: $base-border-radius;
+  display: inline-block;
+  font-weight: bolder;
+  padding-right: 4px;
+  padding-left: 4px;
+  color: white;
+  @include set-type(12px, 3);
+}
