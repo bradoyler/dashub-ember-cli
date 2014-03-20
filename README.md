@@ -1,7 +1,7 @@
 dashub-ember-cli
 ================
 
-DasHub using the Ember Cli
+DasHub using the [Ember-Cli](https://github.com/stefanpenner/ember-cli)
 
 
 # DasHub 
@@ -14,15 +14,16 @@ It uses Ember-Cli, which aims to be the foundation for ambitious web application
 * [Ember-Cli Repo](https://github.com/stefanpenner/ember-cli)
 
 ## Try it
-- http://bradoyler.github.io/dashub-ember-cli
+- http://bradoyler.github.io/dashub
 
-## Install prereqs
+## Getting started 
+### Install prereqs
 
 1. Install node.js from [nodejs.org](http://nodejs.org)
 2. Install bower `npm install -g bower`
 3. Install Ember-Cli `npm install -g ember-cli`
 
-## Get it running :running:
+### Get it running :running:
 
 ```sh
 git clone https://github.com/bradoyler/dashub-ember-cli.git
