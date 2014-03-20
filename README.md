@@ -16,17 +16,21 @@ It uses Ember-Cli, which aims to be the foundation for ambitious web application
 ## Try it
 - http://bradoyler.github.io/dashub-ember-cli
 
-## Get it running :running:
+## Install prereqs
 
 1. Install node.js from [nodejs.org](http://nodejs.org)
-1. install ember-cli (globally) `sudo npm install -g ember-cli`
-1. Clone this repo `git clone https://github.com/bradoyler/dashub-ember-cli.git`
-1. Inside the project directory, run `npm install`
-1. `npm install -g bower` to install bower 
-1. `bower install`
-1. `ember server` to get a local development server running
-1. The app will be running at [http://0.0.0.0:4200](http://0.0.0.0:4200)
+2. Install bower `npm install -g bower`
+3. Install Ember-Cli `npm install -g ember-cli`
 
+## Get it running :running:
+
+```sh
+git clone https://github.com/bradoyler/dashub-ember-cli.git
+cd dashub-ember-cli
+npm install
+bower install
+ember server
+```
 
 ## Contribute (2 ways)
 
